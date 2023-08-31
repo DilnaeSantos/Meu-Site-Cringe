@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/receitas.css">
-    <link rel="stylesheet" href="../style/cabecalho.css">
+    <link rel="stylesheet" href="../style/estruturaCorpo.css">
+    <link rel="stylesheet" href="../style/scrollbar.css">
     <title>Receitas</title>
 </head>
-<body>
+<body class="corpo">
     <header class="cabecalho">
         <nav class="navegacao">
             <a href="../home.html" class="link-navegacao">Home</a>
@@ -15,6 +17,66 @@
             <a href="./cadastro.html" class="link-navegacao">Cadastro</a>
         </nav>
     </header>
-    
+    <main class="conteudo-principal">
+       <section class="receita">
+            <h2>Bolo de Cenoura</h2>
+            <img src="../style/img/bolo.jpg" class="imgBolo" alt="bolo de cenoura com chocolate">
+            <ul>
+                <li>cenouras</li>
+                <li>farinha</li>
+                <li>leite</li>
+                <li>ovos</li>
+            </ul>
+            <div></div>
+            <p class="passoApasso">
+                Descasque e rale as cenouras.
+                Misture os ingredientes secos em uma tigela.
+                Adicione os ingredientes líquidos e as cenouras raladas à mistura.
+                Misture tudo até obter uma massa homogênea.
+                Despeje a massa em uma forma untada e enfarinhada.
+                Asse o bolo no forno pré-aquecido até ficar dourado e faça o teste do palito para verificar o cozimento.
+            </p>
+       </section>
+       <section class="receita">
+            <h2>Macarrão Italiano</h2>
+            <img src="../style/img/macarrao.webp" class="imgMacarrao" alt="macarrao">
+            <ul>
+                <li>500g de farinha</li>
+                <li>5 ovos</li>
+                <li>100g de semolina</li>
+                <li>1 colher de azeite</li>
+            </ul>
+            <div></div>
+            <p class="passoApasso">Em uma tigela, misture 500g de farinha e 100g de semolina.
+                Faça um buraco no centro da mistura e quebre 5 ovos nesse espaço.
+                Adicione 1 colher de azeite aos ovos e comece a misturar gradualmente com a farinha.
+                Continue amassando e incorporando até formar uma massa homogênea.
+                Sove a massa por alguns minutos até ficar macia e elástica.
+                Enrole a massa em plástico filme e deixe descansar por pelo menos 30 minutos antes de usar.</p>
+       </section>
+       <section class="receita">
+            <h2>Panquecas</h2>
+            <img src="../style/img/panquecas.jpeg" class="imgPanquecas" alt="panquecas com carne monhida">
+            <ul>
+                <li>1 xícara de leite</li>
+                <li>1 ovo</li>
+                <li>2 xícaras de farinha</li>
+                <li>3 colheres de margarina</li>
+                <li>1 colher de fermento</li>
+            </ul>
+            <div></div>
+            <p class="passoApasso">
+                Em uma tigela, misture 1 xícara de leite, 1 ovo e 3 colheres de margarina.
+                Adicione 2 xícaras de farinha à mistura e mexa até formar uma massa homogênea.
+                Acrescente 1 colher de fermento à massa e misture bem.
+                Aqueça uma frigideira antiaderente em fogo médio.
+                Despeje uma porção da massa na frigideira e espalhe para formar a panqueca.
+                Cozinhe por alguns minutos de cada lado até que as panquecas fiquem douradas. Sirva com o acompanhamento de sua escolha.
+            </p>
+       </section>
+    </main>
+    <footer class="rodape">
+        <p class="jurema">&copy;Jurema 2022</p>
+    </footer>''
 </body>
 </html>

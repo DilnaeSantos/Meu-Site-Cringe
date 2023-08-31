@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/cabecalho.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/estruturaCorpo.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
     <title>Cadastro</title>
 </head>
-<body>
+
+<body class="corpo">
     <header class="cabecalho">
         <nav class="navegacao">
             <a href="../home.html" class="link-navegacao">Home</a>
@@ -16,8 +20,60 @@
         </nav>
     </header>
     <main>
-
+        <div class="container mt-5">
+            <form id="formulario" action="https://api.staticforms.xyz/submit" method="post" class="formularioDeEnvio">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    <div class="invalid-feedback">
+                        Por favor, informe seu nome.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+                </div>
+                <div class="mb-3">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="rua" placeholder="Digite sua rua">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="numero" placeholder="Digite o número">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="complemento" class="form-label">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="Digite o complemento">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="uf" class="form-label">UF</label>
+                        <input type="text" class="form-control" id="uf" placeholder="Digite o UF">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="hidden" name="accessKey" value="408a6f20-c2ce-4404-bb44-403bb34b549f">
+                <input type="hidden" name="redirectTo" value="https://dilnaesantos.github.io/trabaalho-grupo-M2/html/contato.html">
+            </form>
+        </div>
     </main>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <footer class="rodape">
+        <p class="jurema">&copy;Jurema 2022</p>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../script/cadastro.js"></script>
 </body>
+
 </html>

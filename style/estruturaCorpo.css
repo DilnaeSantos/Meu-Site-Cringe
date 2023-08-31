@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    width: 100%;
+    position: fixed;
+    background-color: #474747;
+}
+
+.navegacao {
+    flex-wrap: wrap;
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-navegacao {
+    margin-right: 3%;
+    padding: 0.4%;
+    text-decoration: none;
+    color: #f0f8ff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.link-navegacao:hover {
+    scale: 1.4;
+    text-decoration: none;
+    color: #474747;
+    background-color: #f0f8ff;
+    border-radius: 10px 100px / 120px 100px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ff6347;
+    min-height: 100vh; /* Defina uma altura mínima igual à altura do viewport */
+    position: relative; /* Necessário para posicionar corretamente o rodapé */
+}
+
+.rodape {
+    height: 5%;
+    position: absolute;
+    bottom: 0; /* Define o rodapé no final da tela */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #474747;
+}
+
+.jurema {
+    color: #fff;
+    margin-top: 0.5%;
+}
+
+@media screen and (max-width: 600px) {
+    .rodape {
+        height: 2%;
+    }
+}

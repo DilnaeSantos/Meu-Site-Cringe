@@ -1,0 +1,50 @@
+.conteudo-principal {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui as sections horizontalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo nas sections */
+}
+
+.receita {
+    flex: 1; /* Permite que todas as sections ocupem o mesmo espaço */
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    margin: 1% 5%; /* Margem entre as sections */
+    background-color: #f1de63;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.imgBolo {
+    width: 50%;
+}
+
+.imgMacarrao {
+    width: 35%;
+}
+
+.imgPanquecas {
+    width: 48%;
+}
+
+li {
+    margin-right: 2%;
+    list-style-position: inside; /* Alinhar as bolinhas dentro do conteúdo da li */
+    text-align: left; /* Alinhar o texto da li à esquerda */
+    padding-left: 25%; /* Espaçamento entre a bolinha e o texto */
+}
+
+div {
+    margin: 0 15%;
+    border: solid 1px black;
+}
+
+.passoApasso {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
